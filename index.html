@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href=".css">
+    <title>Shoes Product Page</title>
+    <style>
+        /* Make the navbar stick to the top */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #343a40; /* Dark background for contrast */
+            padding: 10px 0;
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center align the menu items */
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        nav ul li a:hover {
+            background-color: #007bff; /* Change color on hover */
+            border-radius: 5px;
+        }
+
+        /* Add some space below the fixed navbar */
+        body {
+            padding-top: 60px; /* Adjust based on the height of the navbar */
+        }
+    </style>
+</head>
+<body class="bg-secondary">
+    <!-- Fixed Top Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="content text-light mt-5">
+            <h1>Nike Egypt,<br>Shoes for You</h1>
+            <p>Website for Nike that represents Air Jordan's latest edition with limited pieces. Shop now and rate us! 😊</p>
+        </div>
+
+        <!-- Shoes Cards in One Line -->
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="shoes.png" class="card-img-top" alt="Shoes Image">
+                    <div class="card-body">
+                        <h1 class="card-title">Shoes</h1>
+                        <p class="card-text">Price: $50</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Screenshot_2025-02-02_230011-removebg-preview.png" class="card-img-top" alt="Shoes Image">
+                    <div class="card-body">
+                        <h1 class="card-title">Air Jordan</h1>
+                        <p class="card-text">Price: $99.9</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Screenshot_2025-02-02_230600-removebg-preview.png" class="card-img-top" alt="Shoes Image">
+                    <div class="card-body">
+                        <h1 class="card-title">Air Jordan Low Neck (Black-Red)</h1>
+                        <p class="card-text">Price: $110</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Carousel -->
+        <div id="slide" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slide" data-slide-to="0" class="active"></li>
+                <li data-target="#slide" data-slide-to="1"></li>
+                <li data-target="#slide" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Screenshot_2025-02-02_230011-removebg-preview.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Screenshot_2025-02-02_230600-removebg-preview.png" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="shoes.png" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.js"></script>
+</body>
+</html>
